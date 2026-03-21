@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: sofle}
 layers:
-  default: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
-    LCTRL, Z, X, C, V, B, MUTE, CAPS, N, M, ',', ., /, RCTRL, LEFT GUI, LALT, BACKSPACE, lower, ENTER, SPACE, raise, BACKSPACE, '[', ']']
+  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, TAB, Q, W, E, R, T, Y, U, I, O, P, BACKSPACE, LEFT SHIFT, A, S, D, F, G, H, J, K, L, ;, '''',
+    LCTRL, Z, X, C, V, B, CAPSLOCK, MUTE, N, M, ',', ., /, RCTRL, LEFT GUI, LALT, ENTER, lower, SPACE, ENTER, raise, BACKSPACE, '[', ']']
   lower:
   - {t: ▽, type: trans}
   - F1
@@ -22,9 +22,9 @@ layers:
   - F5
   - F6
   - F7
+  - HOME
   - UP ARROW
-  - UP ARROW
-  - F10
+  - END
   - F11
   - F12
   - CAPS
@@ -37,16 +37,16 @@ layers:
   - LEFT
   - DOWN ARROW
   - RIGHT
-  - )
+  - ;
   - '|'
   - {t: ▽, type: trans}
-  - '='
+  - UNDO
   - '-'
-  - KP PLUS
-  - '{'
+  - COPY
+  - PASTE
   - '}'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - PLAY PAUSE
+  - PRINTSCREEN
   - '['
   - ']'
   - (
@@ -61,8 +61,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - (
-  - )
+  - '['
+  - ']'
   raise:
   - BT CLR
   - {t: BT, h: '0'}
@@ -73,8 +73,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - '-'
+  - '='
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - INS
@@ -185,3 +185,7 @@ layers:
   - ''
   - ''
   - ''
+combos:
+- p: [0, 12]
+  k: {t: ESC, s: '`'}
+  l: [default]
